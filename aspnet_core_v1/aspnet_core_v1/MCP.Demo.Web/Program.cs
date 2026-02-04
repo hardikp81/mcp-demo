@@ -1,9 +1,16 @@
 using MCP.Demo.Web.Startup;
-using OpenTelemetry;
-using OpenTelemetry.Metrics;
-using OpenTelemetry.Trace;
 
 var builder = WebApplication.CreateBuilder(args);
+
+builder.Services.AddCors(options =>
+{
+    options.AddPolicy("allowall", policy =>
+    {
+        policy.AllowAnyHeader()
+            .AllowAnyMethod()
+            .AllowAnyOrigin();
+    });
+});
 
 builder.AddServiceDefaults();
 
@@ -25,6 +32,8 @@ builder.Services.AddHttpClient("MyApi", client =>
 });
 
 var app = builder.Build();
+
+app.UseCors("allowall");
 
 app.MapDefaultEndpoints();
 
