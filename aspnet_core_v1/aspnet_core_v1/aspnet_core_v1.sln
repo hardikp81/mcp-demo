@@ -1,9 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.12.35527.113 d17.12
+# Visual Studio Version 18
+VisualStudioVersion = 18.2.11415.280 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCP.Demo.Web", "MCP.Demo.Web\MCP.Demo.Web.csproj", "{7105EA82-AA97-48CD-8F51-0E7044644AC6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MCP.Demo.ConsoleClient", "MCP.Demo.ConsoleClient\MCP.Demo.ConsoleClient.csproj", "{08A1121F-2F42-46A3-B55D-E3C4B84C95C5}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{7105EA82-AA97-48CD-8F51-0E7044644AC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7105EA82-AA97-48CD-8F51-0E7044644AC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7105EA82-AA97-48CD-8F51-0E7044644AC6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{08A1121F-2F42-46A3-B55D-E3C4B84C95C5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{08A1121F-2F42-46A3-B55D-E3C4B84C95C5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{08A1121F-2F42-46A3-B55D-E3C4B84C95C5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{08A1121F-2F42-46A3-B55D-E3C4B84C95C5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
