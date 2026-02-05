@@ -1,0 +1,15 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "MCP.Demo.Web\\MCP.Demo.Web.csproj",
+        "Action": "Start"
+      },
+      {
+        "Path": "MCP.Demo.ConsoleClient\\MCP.Demo.ConsoleClient.csproj",
+        "Action": "StartWithoutDebugging"
+      }
+    ]
+  }
+]
