@@ -12,7 +12,7 @@ var transportClient = new HttpClientTransport(new HttpClientTransportOptions()
 });
 
 Console.WriteLine("Connecting to the MCP server");
-var mcpClient = await McpClient.CreateAsync(transportClient);
+await using var mcpClient = await McpClient.CreateAsync(transportClient);
 
 Console.WriteLine("Listing available tools from MCP server");
 var mcpTools = await mcpClient.ListToolsAsync();
