@@ -4,11 +4,11 @@
     "Projects": [
       {
         "Path": "MCP.Demo.Web\\MCP.Demo.Web.csproj",
-        "Action": "Start"
+        "Action": "StartWithoutDebugging"
       },
       {
         "Path": "MCP.Demo.ConsoleClient\\MCP.Demo.ConsoleClient.csproj",
-        "Action": "StartWithoutDebugging"
+        "Action": "Start"
       }
     ]
   }

@@ -1,5 +1,6 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ModelContextProtocol.Client;
+using ModelContextProtocol.Protocol;
 
 Console.WriteLine("Waiting for MCP server to start. Press enter once the MCP server is up and running.");
 
@@ -21,6 +22,20 @@ foreach(var m in mcpTools)
     Console.WriteLine(m.Name);
 }
 
+Dictionary<string, object> parameters = new();
+parameters.Add("name", "Hardik");
+
+var toolResult = await mcpTools[0].CallAsync(parameters);
+
+Console.WriteLine("Printing the tool response");
+
+foreach(var c in toolResult.Content)
+{
+    if(c.Type.Equals("text", StringComparison.InvariantCultureIgnoreCase))
+    {
+        Console.WriteLine((c as TextContentBlock).Text);
+    }
+}
 
 
 Console.WriteLine();

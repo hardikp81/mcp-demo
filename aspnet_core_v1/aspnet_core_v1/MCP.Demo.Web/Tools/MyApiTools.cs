@@ -19,8 +19,10 @@ namespace MCP.Demo.Web.Tools
         [McpMeta("category", "employee")]
         public async Task<string> GetApiResponse(string name)
         {
-            var client = _httpClientFactory.CreateClient("MyApi");
-            var responseString = await client.GetStringAsync($"/employees/{name}");
+            //var client = _httpClientFactory.CreateClient("MyApi");
+            //var responseString = await client.GetStringAsync($"/employees/{name}");
+
+            var responseString = $"My name is {name}";
             
             return responseString;
         }
