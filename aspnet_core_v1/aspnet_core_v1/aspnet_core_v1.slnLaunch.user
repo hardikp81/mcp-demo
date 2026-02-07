@@ -7,7 +7,7 @@
         "Action": "StartWithoutDebugging"
       },
       {
-        "Path": "MCP.Demo.ConsoleClient\\MCP.Demo.ConsoleClient.csproj",
+        "Path": "MCP.Demo.ConsoleClient2\\MCP.Demo.ConsoleClient2.csproj",
         "Action": "Start"
       }
     ]
