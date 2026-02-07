@@ -31,6 +31,13 @@ var catalog = await mgr.GetCatalogAsync();
 // Get a model using an alias.
 var model = await catalog.GetModelAsync("qwen2.5-14b") ?? throw new Exception("Model not found");
 
+var isModelCached = await model.IsCachedAsync();
+
+Console.WriteLine($"Model {model.Id} is {(isModelCached ? "already cached" : "not cached")} locally.");
+
+if(isModelCached == false)
+{
+    Console.WriteLine($"Start downloading model: {model.Id}");
 // Download the model (the method skips download if already cached)
 await model.DownloadAsync(progress =>
 {
@@ -40,6 +47,7 @@ await model.DownloadAsync(progress =>
         Console.WriteLine();
     }
 });
+}
 
 // Load the model
 Console.Write($"Loading model {model.Id}...");
