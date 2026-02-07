@@ -12,6 +12,7 @@
     <PackageReference Include="Microsoft.ML.OnnxRuntime.DirectML" Version="1.23.0" />
     <PackageReference Include="Microsoft.AI.Foundry.Local" Version="0.8.2.1" />
     <PackageReference Include="Microsoft.ML.OnnxRuntime.Foundry" Version="1.23.2" />
+    <PackageReference Include="ModelContextProtocol" Version="0.8.0-preview.1" />
   </ItemGroup>
 
 </Project>
